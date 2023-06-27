@@ -23,7 +23,7 @@ function ToyCard({ toy, onDeleteToy, onUpdateToy }) {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(updateObj),
+      body: JSON.stringify(updateObj)
     })
       .then((r) => r.json())
       .then((updatedToy) => onUpdateToy(updatedToy));
